@@ -13,9 +13,9 @@
         <!-- Banner -->
         <div style="height: 764px; background-image: url({% static 'image/img1.png' %}); background-repeat: no-repeat; background-size: 100%;">
             <div class="container-fluid">
-            <!-- Navigation -->
+                <!-- Navigation -->
                 <nav class="navbar navbar-expand-lg navbar-dark" style="padding: 25px 0;">
-                    <a class="navbar-brand" href="javascript:void(0)"><img src="{% static 'image/top-icon.png' %}"></a>
+                    <a class="navbar-brand" href="javascript:void(0)" style="margin-left: 50px;"><img src="{% static 'image/top-icon.png' %}"></a>
                     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -31,10 +31,10 @@
                                 <a class="nav-link disabled" href="javascript:void(0)">Disabled</a>
                             </li> -->
                         </ul>
-                        <form class="form-inline my-2 my-lg-0">                            
-                            <a><i class="fa fa-search text-light" aria-hidden="true"></i></a>                            
-                            <a><img src="{% static 'image/menu.png' %}"></a>
-                            <button class="btn bg-base1 btn-lg my-2 my-sm-0" type="button">Let's Talk</button>
+                        <form class="form-inline my-2 my-lg-0" style="margin-right: 50px;">
+                            <a class="pr-2"><i class="fa fa-search text-light" aria-hidden="true"></i></a>
+                            <a class="pl-2 pr-2"><img src="{% static 'image/menu.png' %}"></a>
+                            <button class="btn bg-base1 btn-lg my-2 my-sm-0 ml-2" type="button">Let's Talk</button>
                         </form>
                     </div>
                 </nav>
@@ -58,8 +58,8 @@
         <!-- About Us -->
         <div class="page-section my-5">
                 <div class="row">
-                    <div class="col-lg-6 text-center">
-                        <img src="{% static 'image/img2.png' %}" class="img-responsive" width="100%">
+                    <div class="col-lg-6">
+                        <img src="{% static 'image/img2.png' %}" class="img-fluid bg-base6" width="100%">
                     </div>
                     <div class="col-lg-6 text-left">
                         <h2 class="text-white text-uppercase mt-0">About Us</h2>
@@ -71,17 +71,18 @@
         </div>
         <!-- About Us End -->
         <!-- Our Services -->
-        <div class="page-section my-5 py-5">
-            <div class="row">
+        <div class="page-section my-5 py-5" style="padding-top: 125px !important;">
+            <div class="row">                
                 <div class="col-lg-5 bg-base2">
                     <h2 class="text-white text-uppercase pl-5 pb-4" style="padding-top: 150px;">Our Services</h2>
                     <p class="text-white-50 pr-5 pl-5 pb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has</p>
                     <p><i class="fa fa-plus pl-5 text-base1" style="padding-bottom: 150px;" aria-hidden="true"></i></p>
                 </div>
-                <div class="col-lg-7 bg-base3" style="background-color: #220a2d;">
-                    <h2 class="text-base1 text-uppercase pt-2">AR/MR Apps</h2>
+                <hr class="bg-base1" style="position: absolute; width: 100px; height: 2px; margin-top: 70px; margin-left: 500px;">
+                <div class="col-lg-7 bg-base3" style="background-color: #220a2d;">                    
+                    <h2 class="text-base1 text-uppercase pt-5">AR/MR Apps</h2>
                     <p class="text-white w-50">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem</p>
-                    <ul class="text-light pt-3 display-5 font-weight-bold" style="list-style-type: none;">
+                    <ul class="list-unstyled text-light pt-3 display-5 font-weight-bold" style="">
                         <li class="pb-5">VR</li>
                         <li class="pb-5">IoT</li>
                         <li class="pb-5">ML & AI</li>
@@ -97,17 +98,17 @@
             <h2 class="text-white text-center text-uppercase pb-3" >Work We Proud Of</h2>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 ">
-                        <img src="{% static 'image/img5.png' %}" class="img-responsive" style="width: 100%;">
+                    <div class="col-lg-6 " style="padding: 0;">
+                        <img src="{% static 'image/img5.png' %}" class="img-fluid bg-base6" style="width: 100%;">
                     </div>
-                    <div class="col-lg-6">
-                        <img src="{% static 'image/img6.png' %}" class="img-responsive" style="width: 100%;">
+                    <div class="col-lg-6" style="padding: 0;">
+                        <img src="{% static 'image/img6.png' %}" class="img-fluid bg-base6" style="width: 100%;">
                     </div>
-                    <div class="col-lg-6">
-                        <img src="{% static 'image/img7.png' %}" class="img-responsive" style="width: 100%;">
+                    <div class="col-lg-6" style="padding: 0;">
+                        <img src="{% static 'image/img7.png' %}" class="img-fluid bg-base6" style="width: 100%;">
                     </div>
-                    <div class="col-lg-6">
-                        <img src="{% static 'image/img8.png' %}" class="img-responsive" style="width: 100%;">
+                    <div class="col-lg-6" style="padding: 0;">
+                        <img src="{% static 'image/img8.png' %}" class="img-fluid bg-base6" style="width: 100%;">
                     </div>
                 </div>
             </div>
@@ -121,7 +122,7 @@
                     <div class="col-lg-4">
                         <div class="card img-fluid">
                             <img class="card-img-top" src="{% static 'image/team2.jpg' %}" alt="Card image" style="">
-                            <div class="card-img-overlay team" style="">
+                            <div class="card-img-overlay team bg-base5" style="margin-top: 80%;">
                                 <h4 class="card-title">Jhon Doe</h4>
                                 <p class="card-text">Founder, Bozia</p>
                             </div>
@@ -130,7 +131,7 @@
                     <div class="col-lg-4" style="">
                         <div class="card img-fluid" style="">
                             <img class="card-img-top" src="{% static 'image/team2.jpg' %}" alt="Card image" style="">
-                            <div class="card-img-overlay team">
+                            <div class="card-img-overlay team bg-base5" style="margin-top: 80%;">
                                 <h4 class="card-title">John Doe</h4>
                                 <p class="card-text">Founder, Bozia</p>
                             </div>
@@ -139,7 +140,7 @@
                     <div class="col-lg-4" style="">
                         <div class="card img-fluid" style="">
                             <img class="card-img-top" src="{% static 'image/team3.jpg' %}" alt="Card image" style="">
-                            <div class="card-img-overlay team">
+                            <div class="card-img-overlay team bg-base5" style="margin-top: 80%;">
                                 <h4 class="card-title">John Doe</h4>
                                 <p class="card-text">Founder, Bozia</p>                            
                             </div>
@@ -152,17 +153,126 @@
         <!-- Insights -->
         <div class="page-section my-5 pb-5 pt-5" style="">
             <div class="container">
-                <h2 class="text-white text-left text-uppercase pb-3" style="">Our Insights</h2>
-                <div class="row text-base1">
+                <div class="row">                    
+                    <div class="col-sm-11"><h2 class="text-white text-left text-uppercase pb-3" style="">Our Insights</h2></div>
+                    <div class="col-sm-1"><p><i class="fa fa-plus text-base1"></i></p></div>
+                  </div>
+                <div class="row">
                     <div class="col-lg-6">
                         <img src="{% static 'image/img10.png' %}" class="img-responsive" style="width: 100%;">
                     </div>
                     <div class="col-lg-6 bg-base2" style="">
-                        
+                       <div class="pt-2">
+                           <p class="pt-3 text-base1">Tech</p>
+                           <h3 class="pt-3 text-uppercase text-light">The best tech stategy of 2020</h3>
+                           <p class="pt-3 text-light">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                           <p class="float-right"><i class="fa fa-long-arrow-right text-base1" aria-hidden="true"></i></p>
+                       </div>
+                       <div>
+                            <p class="pt-3 text-base1">Tech</p>
+                            <h3 class="pt-3 text-uppercase text-light">The best tech stategy of 2020</h3>
+                            <p class="pt-3 text-light">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                            <p class="float-right"><i class="fa fa-long-arrow-right text-base1" aria-hidden="true"></i></p>
+                        </div>
                     </div>                    
                 </div>
             </div>
-        </div>
+        </div>        
         <!-- Insights End -->
+        <hr class="bg-base4" style="width: 100%;">
+        <!-- Footer -->
+        <footer class="text-base2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-2" style="">
+                        <a href="#">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <img src="{% static 'image/top-icon.png' %}" >
+                                </li>
+                                <li class="list-inline-item">
+                                    <h3 class="text-base2">Bozio</h3>
+                                </li>
+                            </ul>
+                        </a>
+                        <ul class="list-unstyled list-inline social text-center pt-2">
+                            <li class="list-inline-item pl-1 pr-1"><a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook text-base2"></i></a></li>
+                            <li class="list-inline-item pl-1 pr-1"><a target="_blank" href="https://www.twitter.com/"><i class="fa fa-twitter text-base2"></i></a></li>
+                            <li class="list-inline-item pl-1 pr-1"><a target="_blank" href="https://www.pinterest.com/"><i class="fa fa-pinterest text-base2"></i></a></li>
+                            <li class="list-inline-item pl-1 pr-1"><a target="_blank" href="https://www.instagram.com/"><i class="fa fa-instagram text-base2"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                        <!-- <h5 class="text-uppercase">Links</h5> -->
+                        <ul class="list-unstyled">
+                            <li class="">
+                                <a href="#!" class="text-base2">Krommebeekstraat 14</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-base2">8930 Menen, Belgium</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-base2">+32 56 521 380</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-base2">info@company.io</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                        <!-- <h5 class="text-uppercase">Links</h5> -->
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!" class="text-base2">Our Services</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-base2">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-base2">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-base2">Teams</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-base2">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-base2">For Personal</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                        <!-- <h5 class="text-uppercase">Links</h5> -->
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#!" class="text-base2">Home</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-base2">Map</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-base2">Accessibility</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-base2">Privacy Policty</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-base2">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <form class="form-inline">                            
+                            <label for="email" class="mr-sm-2 text-light">Subscribe for newsletter</label>
+                            <input placeholder="Type your email..." class="" style="padding: 5px 1px; margin-right: 2px;" >
+                            <button class="btn bg-base4 text-light" style="background: #66178b">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer End -->
     </body>
 </html>
