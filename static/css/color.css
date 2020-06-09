@@ -10,6 +10,20 @@
 .bg-base3{
     background-color: #220a2d;
 }
+.bg-base4{
+    background-color: #66178b;
+}
+.bg-base5{
+    background-color: #66178b;
+    opacity: 0.5;
+}
+.bg-base6{
+    background-color: #d91f4b;
+    opacity: 0.75;
+}
 .text-base1{
     color: #d91f4b;
+}
+.text-base2{
+    color: #66178b;
 }
