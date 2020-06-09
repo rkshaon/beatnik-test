@@ -1,0 +1,6 @@
+.team{
+    display: none;
+}
+.card:hover .team{
+    display: block;
+}
