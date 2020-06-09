@@ -1,0 +1,246 @@
+{% load static %}
+<html>
+    <head>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" >
+        <link rel="stylesheet" href="{% static 'css/color.css' %}" >
+        <title>Beatnik</title>
+    </head>
+    <body id="page-top" class="bg-base0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href=""><img src="{% static 'image/top-icon.png' %}"></a><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto my-2 my-lg-0">                        
+                        <li class="nav-item"><a class="nav-link" href="#">Search Icon</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Menu Icon</a></li>
+                        <li class="nav-item"><a class="nav-link btn bg-base1 btn-lg" href="#">Let's Talk</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container h-100">
+                <div class="row h-100 text-left">
+                    <div class="col-lg-10 align-self-end">
+                        <h1 class="text-uppercase text-white font-weight-bold">Creating</h1>
+                        <h1 class="text-uppercase text-white font-weight-bold">Digital Bussiness</h1>                        
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">                        
+                        <a class="btn bg-base1 btn-lg text-light" href="#about">Get Start!</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="page-section my-4" id="about">
+            <div class="container">
+                <div class="row justify-content-center" style="position: relative;">
+                    <div class="col-lg-6 text-center">
+                        <img src="{% static 'image/img2.png' %}" class="img-responsive" width="100%">
+                    </div>
+                    <div class="col-lg-6 text-left">
+                        <h2 class="text-white text-uppercase mt-0">About Us</h2>
+                        <p class="text-white-50 mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <p><i class="fas fa-plus text-light"></i></p>
+                        <img src="{% static 'image/img3.png' %}" class="img-responsive pt-3" width="100%" style="position: absolute; right: 0px; top: 250px; width: 140%;">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-5 col-md-5 bg-base2" style="">
+                        <div class="mt-5 pl-5">
+                            <h2 class="text-left ml-auto text-light pt-4">Our Service</h2>
+                            <p class="text-justify text-light pt-4">Our themes are updated regularly to keep them bug free!Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco.</p>
+                            <button class="btn btn-xl"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-7" style="background: url(assets/img/mobile-screen.png); background-size: contain; background-position: center; background-repeat: no-repeat; width: 100%;">
+                        <img src="{% static 'image/img4.png' %}" class="img-responsive pt-3" width="100%" style="position: absolute; right: 0px; top: 0px; width: 489px; height: 790px;">
+                        <div class="mt-4 col-lg-6" style="">
+                            <h3 class="h4 mb-2">AR/MR APPS</h3>
+                            <p class="text-muted mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <ul class="service-list">
+                                <li class="">VR</li>
+                                <li>IoT</li>
+                                <li>ML & AI</li>
+                                <li>Games</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio-->
+        <div id="portfolio">
+            <div class="container-fluid p-0">
+                <h2 class="mb-4 text-uppercase text-center">work we proud of</h2>
+                <div class="row no-gutters">
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg"
+                            ><img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div></a
+                        >
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg"
+                            ><img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div></a
+                        >
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg"
+                            ><img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div></a
+                        >
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg"
+                            ><img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div></a
+                        >
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg"
+                            ><img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div></a
+                        >
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg"
+                            ><img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="" />
+                            <div class="portfolio-box-caption p-3">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
+                            </div></a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team -->
+        <section class="page-section bg-dark text-white">
+            <div class="container">
+                    <div class="row">
+                        <div class="heading-title text-left">
+                            <h3 class="text-uppercase">Meet Our Team</h3>                            
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-4">
+                            <div class="team-member">
+                                <div class="team-img">
+                                    <img src="https://image.freepik.com/free-photo/man-standing-with-a-black-t-shirt_1187-1045.jpg" alt="team member" class="img-responsive">
+                                </div>
+                                <div class="team-hover">
+                                    <div class="desk">
+                                        <h4>Hi There !</h4>
+                                        <p>I love to introduce myself as a hardcore Web Designer.</p>
+                                    </div>
+                                    <div class="s-link">
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="team-member">
+                                <div class="team-img">
+                                    <img src="https://image.freepik.com/free-photo/elegant-man-with-thumbs-up_1149-1595.jpg" alt="team member" class="img-responsive">
+                                </div>
+                                <div class="team-hover">
+                                    <div class="desk">
+                                        <h4>Hello World</h4>
+                                        <p>I love to introduce myself as a hardcore Web Designer.</p>
+                                    </div>
+                                    <div class="s-link">
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="team-member">
+                                <div class="team-img">
+                                    <img src="https://image.freepik.com/free-photo/well-dressed-executive-with-crossed-arms_1098-3930.jpg" alt="team member" class="img-responsive">
+                                </div>
+                                <div class="team-hover">
+                                    <div class="desk">
+                                        <h4>I love to design</h4>
+                                        <p>I love to introduce myself as a hardcore Web Designer.</p>
+                                    </div>
+                                    <div class="s-link">
+                                        <a href="#"><i class="fa fa-facebook"></i></a>
+                                        <a href="#"><i class="fa fa-twitter"></i></a>
+                                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="mt-0">Let's Get In Touch!</h2>
+                        <hr class="divider my-4" />
+                        <p class="text-muted mb-5">Ready to start your next project with us? Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
+                        <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
+                        <div>+1 (555) 123-4567</div>
+                    </div>
+                    <div class="col-lg-4 mr-auto text-center">
+                        <i class="fas fa-envelope fa-3x mb-3 text-muted"></i
+                        ><!-- Make sure to change the email address in BOTH the anchor text and the link target below!--><a class="d-block" href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="bg-light py-5">
+            <div class="container"><div class="small text-center text-muted">Copyright © 2020 - Start Bootstrap</div></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
