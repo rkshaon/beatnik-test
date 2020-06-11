@@ -1,9 +1,13 @@
 from django.shortcuts import render
 from django.template import loader
 from django.http import HttpResponse
+from .models import Team, Portfolio, Blog
 
 def index(request):
-    # return HttpResponse("Hello, world. You're at the polls index.")
-    # template = loader.get_template('demo/index.html')
-    # return HttpResponse(template.render(context, request))
-    return render(request, 'demo/index.html')
+    teams = Team.objects.all()
+    portfolios = Portfolio.objects.all()
+    blogs = Blog.objects.all()
+    return render(request, 'demo/index.html', {'teams': teams,
+    'portfolios': portfolios,
+    'blogs': blogs,
+    })
