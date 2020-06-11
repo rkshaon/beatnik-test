@@ -9,7 +9,8 @@
         <link rel="stylesheet" href="{% static 'css/color.css' %}" >
         <title>Beatnik</title>
     </head>
-    <body class="bg-base0">        
+    <body class="bg-base0">
+        {% block content %}
         <!-- Banner -->
         <div style="height: 764px; background-image: url({% static 'image/img1.png' %}); background-repeat: no-repeat; background-size: 100%;">
             <div class="container-fluid">
@@ -98,38 +99,16 @@
             <h2 class="text-white text-center text-uppercase pb-3" >Work We Proud Of</h2>
             <div class="container">
                 <div class="row">
+                    {% for p in portfolios %}
                     <div class="col-lg-6 " style="padding: 0;">
                         <div class="card img-fluid" style="">
-                            <img src="{% static 'image/img5.png' %}" class="img-fluid bg-base6" style="width: 100%;">
+                            <img src="{{ p.image.url }}" class="img-fluid bg-base6" style="width: 100%;">
                             <div class="card-img-overlay" style="margin-top: 40%;">
-                                <h4 class="card-title text-light">AR APP for KIGO</h4>
+                                <h4 class="card-title text-light">{{ p.title }}</h4>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6" style="padding: 0;">                        
-                        <div class="card img-fluid" style="">
-                            <img src="{% static 'image/img6.png' %}" class="img-fluid bg-base6" style="width: 100%;">
-                            <div class="card-img-overlay" style="margin-top: 40%;">
-                                <h4 class="card-title text-light">VR Experience Design for STUPOIN</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6" style="padding: 0; ">
-                        <div class="card img-fluid" style="">
-                            <img src="{% static 'image/img7.png' %}" class="img-fluid bg-base6" style="width: 100%;">
-                            <div class="card-img-overlay" style="margin-top: 40%;">
-                                <h4 class="card-title text-light">Digital Experience for XAMMON</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6" style="padding: 0;">
-                        <div class="card img-fluid" style="">
-                            <img src="{% static 'image/img8.png' %}" class="img-fluid bg-base6" style="width: 100%;">
-                            <div class="card-img-overlay" style="margin-top: 40%;">
-                                <h4 class="card-title text-light">AR app for GASTOO mobile</h4>
-                            </div>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
@@ -139,33 +118,17 @@
             <div class="container">
                 <h2 class="text-white text-left text-uppercase pb-3" style="">Meet Our Team</h2>
                 <div class="row text-base1">
+                    {% for t in teams %}                    
                     <div class="col-lg-4">
                         <div class="card img-fluid">
-                            <img class="card-img-top" src="{% static 'image/team2.jpg' %}" alt="Card image" style="">
+                            <img class="card-img-top" src="{{ t.image.url}}" alt="Card image" style="">
                             <div class="card-img-overlay team bg-base5" style="margin-top: 80%;">
-                                <h4 class="card-title">Jhon Doe</h4>
-                                <p class="card-text">Founder, Bozia</p>
+                                <h4 class="card-title">{{t.full_name}}</h4>
+                                <p class="card-text">{{t.designation}}</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4" style="">
-                        <div class="card img-fluid" style="">
-                            <img class="card-img-top" src="{% static 'image/team2.jpg' %}" alt="Card image" style="">
-                            <div class="card-img-overlay team bg-base5" style="margin-top: 80%;">
-                                <h4 class="card-title">John Doe</h4>
-                                <p class="card-text">Founder, Bozia</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4" style="">
-                        <div class="card img-fluid" style="">
-                            <img class="card-img-top" src="{% static 'image/team3.jpg' %}" alt="Card image" style="">
-                            <div class="card-img-overlay team bg-base5" style="margin-top: 80%;">
-                                <h4 class="card-title">John Doe</h4>
-                                <p class="card-text">Founder, Bozia</p>                            
-                            </div>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
@@ -182,18 +145,14 @@
                         <img src="{% static 'image/img10.png' %}" class="img-responsive" style="width: 100%;">
                     </div>
                     <div class="col-lg-6 bg-base2" style="">
+                        {% for b in blogs %}
                        <div class="pt-2">
-                           <p class="pt-3 text-base1">Tech</p>
-                           <h3 class="pt-3 text-uppercase text-light">The best tech stategy of 2020</h3>
-                           <p class="pt-3 text-light">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
+                           <p class="pt-3 text-base1">{{ b.topic }}</p>
+                           <h3 class="pt-3 text-uppercase text-light">{{ b.title }}</h3>
+                           <p class="pt-3 text-light">{{ b.details }}</p>
                            <p class="float-right"><i class="fa fa-long-arrow-right text-base1" aria-hidden="true"></i></p>
                        </div>
-                       <div>
-                            <p class="pt-3 text-base1">Tech</p>
-                            <h3 class="pt-3 text-uppercase text-light">The best tech stategy of 2020</h3>
-                            <p class="pt-3 text-light">Lorem Ipsum is simply dummy text of the printing and typesetting</p>
-                            <p class="float-right"><i class="fa fa-long-arrow-right text-base1" aria-hidden="true"></i></p>
-                        </div>
+                       {% endfor %}
                     </div>                    
                 </div>
             </div>
@@ -299,5 +258,6 @@
             <!-- Copyright -->
         </footer>
         <!-- Footer End -->
+        {% endblock content %}
     </body>
 </html>
