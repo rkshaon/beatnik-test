@@ -10,13 +10,12 @@
         <title>Beatnik</title>
     </head>
     <body class="bg-base0">
-        {% block content %}
         <!-- Banner -->
         <div style="height: 764px; background-image: url({% static 'image/img1.png' %}); background-repeat: no-repeat; background-size: 100%;">
             <div class="container-fluid">
                 <!-- Navigation -->
                 <nav class="navbar navbar-expand-lg navbar-dark" style="padding: 25px 0;">
-                    <a class="navbar-brand" href="javascript:void(0)" style="margin-left: 50px;"><img src="{% static 'image/top-icon.png' %}"></a>
+                    <a href="#" class="navbar-brand" href="javascript:void(0)" style="margin-left: 50px;"><img src="{% static 'image/top-icon.png' %}"></a>
                     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -33,9 +32,9 @@
                             </li> -->
                         </ul>
                         <form class="form-inline my-2 my-lg-0" style="margin-right: 50px;">
-                            <a class="pr-2"><i class="fa fa-search text-light" aria-hidden="true"></i></a>
-                            <a class="pl-2 pr-2"><img src="{% static 'image/menu.png' %}"></a>
-                            <button class="btn bg-base1 btn-lg my-2 my-sm-0 ml-2" type="button">Let's Talk</button>
+                            <a class="pr-2" href="#"><i class="fa fa-search text-light" aria-hidden="true"></i></a>
+                            <a class="pl-2 pr-2" href="#"><img src="{% static 'image/menu.png' %}"></a>
+                            <a class="btn bg-base1 btn-lg my-2 my-sm-0 ml-2" href="#">Let's Talk</a>
                         </form>
                     </div>
                 </nav>
@@ -166,7 +165,7 @@
                     <div class="col-sm-1"></div>
                     <div class="col-sm-2" style="">
                         <a href="#">
-                            <ul class="list-inline">
+                            <ul class="list-inline pt-1">
                                 <li class="list-inline-item">
                                     <img src="{% static 'image/top-icon.png' %}" >
                                 </li>
@@ -185,16 +184,16 @@
                     <div class="col-sm-2">
                         <!-- <h5 class="text-uppercase">Links</h5> -->
                         <ul class="list-unstyled">
-                            <li class="">
+                            <li class="pt-1">
                                 <a href="#!" class="text-base2">Krommebeekstraat 14</a>
                             </li>
-                            <li>
+                            <li class="pt-1">
                                 <a href="#!" class="text-base2">8930 Menen, Belgium</a>
                             </li>
-                            <li>
+                            <li class="pt-1">
                                 <a href="#!" class="text-base2">+32 56 521 380</a>
                             </li>
-                            <li>
+                            <li class="pt-1">
                                 <a href="#!" class="text-base2">info@company.io</a>
                             </li>
                         </ul>
@@ -202,22 +201,22 @@
                     <div class="col-sm-2">
                         <!-- <h5 class="text-uppercase">Links</h5> -->
                         <ul class="list-unstyled">
-                            <li>
+                            <li class="pt-1">
                                 <a href="#!" class="text-base2">Our Services</a>
                             </li>
-                            <li>
+                            <li class="pt-1">
                                 <a href="#!" class="text-base2">About Us</a>
                             </li>
-                            <li>
+                            <li class="pt-1">
                                 <a href="#!" class="text-base2">Portfolio</a>
                             </li>
-                            <li>
+                            <li class="pt-1">
                                 <a href="#!" class="text-base2">Teams</a>
                             </li>
-                            <li>
+                            <li class="pt-1">
                                 <a href="#!" class="text-base2">Pricing</a>
                             </li>
-                            <li>
+                            <li class="pt-1">
                                 <a href="#!" class="text-base2">For Personal</a>
                             </li>
                         </ul>
@@ -225,19 +224,19 @@
                     <div class="col-sm-2">
                         <!-- <h5 class="text-uppercase">Links</h5> -->
                         <ul class="list-unstyled">
-                            <li>
+                            <li class="pt-1">
                                 <a href="#!" class="text-base2">Home</a>
                             </li>
-                            <li>
+                            <li class="pt-1">
                                 <a href="#!" class="text-base2">Map</a>
                             </li>
-                            <li>
+                            <li class="pt-1">
                                 <a href="#!" class="text-base2">Accessibility</a>
                             </li>
-                            <li>
+                            <li class="pt-1">
                                 <a href="#!" class="text-base2">Privacy Policty</a>
                             </li>
-                            <li>
+                            <li class="pt-1">
                                 <a href="#!" class="text-base2">Contact</a>
                             </li>
                         </ul>
@@ -258,6 +257,5 @@
             <!-- Copyright -->
         </footer>
         <!-- Footer End -->
-        {% endblock content %}
     </body>
 </html>
